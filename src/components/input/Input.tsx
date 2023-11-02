@@ -1,9 +1,4 @@
-import {
-  ChangeEvent,
-  InputHTMLAttributes,
-  LabelHTMLAttributes,
-  useRef,
-} from "react";
+import { ChangeEvent, useRef } from "react";
 
 interface InputTypeProps {
   attributes: {

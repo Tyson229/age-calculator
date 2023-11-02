@@ -1,5 +1,3 @@
-import React from "react";
-
 interface AgeItemTypeProps {
   number: number;
   measurement: string;
@@ -8,7 +6,7 @@ interface AgeItemTypeProps {
 const AgeItem = ({ number, measurement }: AgeItemTypeProps) => {
   return (
     <div>
-      <span className="age__result">{number || '--'}</span>
+      <span className="age__result">{number || "--"}</span>
       {measurement}
     </div>
   );
