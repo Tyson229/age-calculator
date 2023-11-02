@@ -1,0 +1,21 @@
+@use "../../styles/variables";
+
+.age__container {
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.age__result {
+  color: variables.$purple;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .age__container {
+    font-size: 5rem
+  }
+}

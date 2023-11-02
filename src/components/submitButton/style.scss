@@ -1,0 +1,43 @@
+@use "../../styles/variables";
+
+.btn__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.btn__submit {
+  margin: auto 0;
+  border-radius: 999px;
+  padding: 1.2em;
+  width: 5em;
+  height: 5em;
+  border: none;
+  background: variables.$purple;
+
+  &:hover {
+    background-color: variables.$light-purple;
+  }
+
+  &:active {
+    background-color: variables.$dark-purple;
+  }
+}
+
+img {
+  max-width: 80%;
+}
+
+.line {
+  height: 1px;
+  display: block;
+  background-color: variables.$light-grey;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .hidden {
+    display: none;
+  }
+  
+}

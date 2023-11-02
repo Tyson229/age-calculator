@@ -1,0 +1,66 @@
+@use "../../styles/variables";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.inputBox {
+  flex-direction: column;
+  gap: 4px;
+  width: 30%;
+
+  &__label {
+    font-size: 0.8em;
+    letter-spacing: 0.25em;
+    color: variables.$smokey-grey;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__input {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.8em 1em;
+    border: 0.5px solid variables.$light-grey;
+    border-radius: 8px;
+
+    &:focus {
+      outline: 2px solid variables.$purple;
+    }
+  }
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputList {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.errorMessage {
+  color: variables.$light-red;
+  font-style: italic;
+}
+
+.error {
+  color: variables.$light-red;
+
+  &__input {
+    border: 1px solid variables.$light-red;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .inputList {
+    width: 70%;
+  }
+}

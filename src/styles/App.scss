@@ -1,0 +1,15 @@
+.container {
+  background: white;
+  margin: 0 auto;
+  padding: 3em 1.5em;
+  border-radius: 1.5em 1.5em 4em 1.5em;
+  margin-top: 5rem;
+  max-width: 1440px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 4em 5em;
+    margin-top: 0;
+  }
+}

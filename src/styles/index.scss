@@ -1,0 +1,21 @@
+@use "./variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: variables.$off-white;
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
